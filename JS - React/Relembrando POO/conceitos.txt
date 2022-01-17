@@ -37,4 +37,8 @@ Polimorfismo, utilizar objetos de formas diferentes
 
 Duck type = anda como pato, come como pato...
 
+JS Linter
+
+"npx eslint --init"
+Caso precise
 
