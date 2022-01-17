@@ -1,0 +1,5 @@
+Escopo é basicamente o limite de alguma coisa nas funções ou coisas parecidas
+
+escopo de blocos: basicamente o escopo de if, for, while...
+Que so pode ser quebrado por var
+

@@ -1,0 +1,18 @@
+Em arrow function alem de economizar codigo podemos acessar outros escopos. O escopo lexico
+nomes.forEach((nome) => {
+    console.log(`${this._codigo}: ${nome}`);
+});
+nesse caso estariamos acessando outro escopo e não o do forEach
+
+imprime(nomes) {
+        nomes.forEach(function(nome) {
+        console.log(`${this._codigo}: ${nome}`);
+     }.bind(this));
+   }
+
+   Ou assim, Como podemos ver, o bind vai passar um contexto para um função que não é dela, 
+   ou seja, o this._codigo dentro do forEach vai ter o contexto da classe ModuloDeImpressao.
+   Ou seja o contexto anterior, tranvando-o, basicamente.
+
+   Escopo lexico é basicamente isso, funções alinhadas procurarem por alguma coisa em um contexto 
+   acima delas
