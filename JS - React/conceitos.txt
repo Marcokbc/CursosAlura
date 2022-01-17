@@ -1,0 +1,40 @@
+Modularizar é basicamente divir em varios arquivos as suas classes, e exportalas
+Basicamente arquivos que exportam coisas para outros arquivos consumirem
+
+Packge.json
+Para poder modularizar o projeto, e fazer o node entender que o index é um módulo, através de um package.json:
+npm init
+E após isso configurar oq foi pedido, é bem intuitivo.
+
+O js permite que modifiquemos dinamicamente dados passados por referência em métodos de outras classes, mas não nos permite fazer o mesmo com dados primitivos.
+
+vimos que, dependendo dos valores que uma variável guarda, seu comportamento dentro do código pode variar, passando como uma cópia de seu valor ou como uma referência ao espaço de memória onde ela está guardada. O JS faz isso baseado justamente nos valores que a variável guarda. Tipos primitivos são sempre passados como um valor, enquanto tipos não primitivos sempre são passados por referência.
+
+Qualquer outro tipo que encontramos em nossas aplicações, como Objetos, Arrays, etc... não são tipos primitivos e por isso seu comportamento é distinto. Variáveis não primitivas são mutáveis por natureza e tem potencial para armazenar estruturas muito mais complexas, o que torna as operações de cópia desses valores muito ineficiente.
+Quando criamos um objeto dentro do JavaScript ocorre a reserva de um espaço na memória local que chamamos de heap. Ao fazer isso, o que o JavaScript guarda na nova variável não é o valor do Objeto que criamos, mas sim o endereço de memória onde os valores estão salvos.
+Dessa forma, ao declararmos uma variável que armazena informações dentro do heap, o que estamos fazendo é "alugar" um espaço da memória, o qual funções podem acessar. Isso torna as operações muito mais eficientes, mas tem um problema: quaisquer alterações no conteúdo armazenado pelos objetos não primitivos afetam todas as variáveis que o referenciam.
+
+
+Undefined = não definido 
+Null = alguém colocou para ser nulo
+
+SET é para settar algo e Get é para pegar algo
+
+
+Construtores são utilizados para inicializar os atributos.
+
+estaticos são referentes a propria classe 
+A ideia é trabalharmos com um atributo estático, do tipo que reflete as alterações em todos os objetos daquela classe
+
+
+A ideia de HERANÇA é herdar codigo
+
+Super faz referença a classe pai
+
+Classe abstrata é somente para ser herdada e não instanciada
+
+Polimorfismo, utilizar objetos de formas diferentes
+
+Duck type = anda como pato, come como pato...
+
+
