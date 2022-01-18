@@ -1,0 +1,6 @@
+Promise é um objeto que representa um sucesso ou falha de uma operação assincrona
+
+Vantagens: controle e legilibilidade, reduz o acoplamento entre funções de callback e mais previsibiliade 
+e detalhamento nos erros
+
+na maioria das vezes vai usar uma promise ja feita
