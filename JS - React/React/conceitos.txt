@@ -1,0 +1,10 @@
+npm - gerenciador de pacotes, guarda e compartilha pacotes
+npx - executador de pacotes
+
+O render é para desenhar na tela basicamente
+
+npx create-react-app + nome do projeto para criar um projeto react
+
+npm start para começalo
+
+utiliza o jsx, uma maneira facil de declarar elementos dentro do js
