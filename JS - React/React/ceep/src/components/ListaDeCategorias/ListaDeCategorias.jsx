@@ -7,16 +7,16 @@ class ListaDeCategorias extends Component {
     this.state = {categorias:[]}
     this._novasCategorias = this._novasCategorias.bind(this);
   }
-  componentDidMount(){
+  componentDidMount(){//Ele exuta dps da montagem do component
     this.props.categorias.inscrever(this._novasCategorias);
   }
 
-  componentWillUnmount(){
+  componentWillUnmount(){//quando for desmontado
     this.props.categorias.desinscrever(this._novasCategorias);
   }
   
   _novasCategorias(categorias){
-   this.setState({...this.state,categorias})
+   this.setState({...this.state,categorias})//spread operator
   }
 
   _handleEventoInput(e) {
